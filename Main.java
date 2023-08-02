@@ -93,9 +93,13 @@ public class Main {
                             case 2:
                                 System.out.println("Enter the slot number to buy the item: ");
                                 int slotNumber = scanner.nextInt();
-                                test.printTotalDenominationQuantity();
-
                                 Denomination paymentDenomination = new Denomination();
+                                System.out.println("Enter the number of denomination you want to add: ");
+                                System.out.println("1. Dollar");
+                                System.out.println("2. Quarter");
+                                System.out.println("3. Dime");
+                                System.out.println("4. Nickel");
+                                System.out.println("4. Penny");
 
                                 boolean doneEntering = false;
                                 while (!doneEntering) {
@@ -287,7 +291,12 @@ public class Main {
                                 test.displayItems(test.getInventory());
                                 System.out.println("Enter the slot number to buy the item: ");
                                 int slotNumber = scanner.nextInt();
-                                test.printTotalDenominationQuantity();
+                                System.out.println("Enter the number of denomination you want to add: ");
+                                System.out.println("1. Dollar");
+                                System.out.println("2. Quarter");
+                                System.out.println("3. Dime");
+                                System.out.println("4. Nickel");
+                                System.out.println("4. Penny");
 
                                 Denomination paymentDenomination = new Denomination();
 
@@ -350,7 +359,12 @@ public class Main {
 
                                 while (!doneEnteringOrder || !doneEnteringRamen) {
                                     paymentDenominationOrder = new Denomination();
-                                    test.printTotalDenominationQuantity();
+                                    System.out.println("Enter the number of denomination you want to add: ");
+                                    System.out.println("1. Dollar");
+                                    System.out.println("2. Quarter");
+                                    System.out.println("3. Dime");
+                                    System.out.println("4. Nickel");
+                                    System.out.println("4. Penny");
                                     if (!doneEnteringOrder) {
                                         do {
                                             int denominationChoice = scanner.nextInt();

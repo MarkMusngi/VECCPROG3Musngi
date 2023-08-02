@@ -1,28 +1,28 @@
 public class Item {
-    private String name;
-    private double price;
-    private int calories;
+    private String strName;
+    private double dPrice;
+    private int nCalories;
 
     public Item(String name, double price, int calories) {
-        this.name = name;
-        this.price = price;
-        this.calories = calories;
+        this.strName = name;
+        this.dPrice = price;
+        this.nCalories = calories;
     }
 
     public String getName() {
-        return this.name;
+        return this.strName;
     }
 
     public double getPrice() {
-        return this.price;
+        return this.dPrice;
     }
 
     public int getCalories() {
-        return this.calories;
+        return this.nCalories;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPrice(double dPrice) {
+        this.dPrice = dPrice;
     }
 
 }
